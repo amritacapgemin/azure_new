@@ -16,6 +16,7 @@ app.use(bodyParser.json());
 app.listen(port, "0.0.0.0", function () {
     console.log("Listening on --- Port 3000");
 });
+
  app.post('/azure', function (req, response) {
 	 
 	  switch (req.body.queryResult.intent.displayName) {			
@@ -24,5 +25,5 @@ app.listen(port, "0.0.0.0", function () {
 		   response.send(JSON.stringify({ "fulfillmentText": "test data hiii" }));
 			
 				break;
-	  }				
+	  			
  });

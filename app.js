@@ -22,8 +22,7 @@ app.listen(port, "0.0.0.0", function () {
            case "resourcegroup":	
 		   
 		   response.send(JSON.stringify({ "fulfillmentText": "test data hiii" }));
-				
-               
-                 }); 
-				break;		
+			
+				break;
+	  }				
  });

@@ -17,7 +17,7 @@ app.listen(port, "0.0.0.0", function () {
     console.log("Listening on --- Port 3000");
 });
 
- app.post('/azure', function (req, response) {
+ app.post('/test', function (req, response) {
 	 
 	  switch (req.body.queryResult.intent.displayName) {			
            case "resourcegroup":	
